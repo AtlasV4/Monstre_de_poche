@@ -77,6 +77,26 @@ EndMonster
 
 ```
 
+
+Vous pouvez ajouter vos propres attaques dans `attacks.txt` en suivant ce format :
+
+```text
+Attack
+Name Lance-Flammes
+Type Fire
+Damage 40 60
+Ratio 1.0
+Usage 15
+EndAttack
+
+```
+
+- **Damage** : Plage de dégâts (Min Max) choisis aléatoirement à chaque coup.
+
+- **Ratio** : Multiplicateur de précision ou de puissance critique.
+
+- **Usage** : Nombre de points de pouvoir (PP) disponibles pour cette attaque.
+
 ## 🎨 Aperçu de l'Interface
 
 * **Centre** : Arène de combat avec décors et sprites.
