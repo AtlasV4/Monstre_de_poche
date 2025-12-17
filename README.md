@@ -1,9 +1,9 @@
 # Monstre_de_poche
 
 
-# 🐾 POOTP - Monstre de Poche
+# 🐾 Monstre de Poche
 
-**POOTP** est un jeu de combat de monstres au tour par tour développé en Java. Inspiré des RPG classiques, il propose une interface graphique interactive incluant une arène visuelle, un système de types élémentaires et une gestion d'équipe.
+**Monstre de Poche** est un jeu de combat de monstres au tour par tour développé en Java. Inspiré des RPG classiques, il propose une interface graphique interactive incluant une arène visuelle, un système de types élémentaires et une gestion d'équipe.
 
 ## 🚀 Fonctionnalités
 
