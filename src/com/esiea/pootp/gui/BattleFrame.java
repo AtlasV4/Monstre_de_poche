@@ -15,7 +15,7 @@ public class BattleFrame extends JFrame {
     private ArenaPanel arenaPanel;
 
     public BattleFrame(Player p1, Player p2) {
-        setTitle("POOTP - Battle Arena");
+        setTitle("POOTP - Monstre de poche");
         setSize(1000, 750);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());

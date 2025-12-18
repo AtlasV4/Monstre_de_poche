@@ -1,6 +1,5 @@
 package com.esiea.pootp.data;
 
-/** Représente le modèle statique d'une attaque lu du fichier. */
 public class AttackMap {
     public final String name;
     public final String type;

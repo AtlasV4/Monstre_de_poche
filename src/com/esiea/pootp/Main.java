@@ -62,9 +62,6 @@ public class Main {
         }).start();
     }
 
-    /**
-     * Méthode utilitaire pour créer un joueur avec ses monstres et objets
-     */
     private static Player initializePlayer(String name, List<MonsterMap> blueprints, ArrayList<AttackMap> attackBlueprints) {
         List<Monster> team = new ArrayList<>();
         Random rand = new Random();

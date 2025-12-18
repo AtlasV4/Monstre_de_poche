@@ -1,6 +1,5 @@
 package com.esiea.pootp;
 
-import com.esiea.pootp.attacks.Attack;
 import com.esiea.pootp.monsters.Monster;
 import com.esiea.pootp.objects.Consumable;
 import com.esiea.pootp.gui.BattleFrame;
@@ -37,10 +36,6 @@ public class Player {
         this.gui = gui;
     }
 
-    /**
-     * Cette méthode remplace la boucle Scanner.
-     * Elle affiche les boutons et "attend" que selectedAction soit rempli par un clic.
-     */
     public Action chooseAction(Monster opponent) {
 
         if (this.activeMonster == null || this.activeMonster.getHp() <= 0) {
@@ -72,9 +67,6 @@ public class Player {
         return selectedAction;
     }
 
-    /**
-     * Appelée par les boutons de la GUI pour débloquer chooseAction
-     */
     public void notifyDecision(Action action) {
         synchronized (lock) {
             this.selectedAction = action;
