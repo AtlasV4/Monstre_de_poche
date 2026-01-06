@@ -1,103 +1,136 @@
 Attack
-Name Coup
-Type Normal
-Power 40
-NbUse 35
-Fail 0.05
-EndAttack
-
-Attack
-Name Eclair
-Type Electric
-Power 90
-NbUse 15
-Fail 0.10
-EndAttack
-
-Attack
-Name Lance-Flamme
-Type Fire
-Power 90
-NbUse 15
-Fail 0.10
-EndAttack
-
-Attack
-Name Hydrocanon
-Type Water
-Power 110
-NbUse 5
-Fail 0.20
-EndAttack
-
-Attack
-Name Tranch-Herbe
-Type Nature
-Power 55
+Name Piqûre
+Type Insect
+Power 60
 NbUse 25
-Fail 0.05
-EndAttack
-
-Attack
-Name Seisme
-Type Soil
-Power 100
-NbUse 10
 Fail 0.00
 EndAttack
 
 Attack
-Name Tunnel
-Type Soil
-Power 80
-NbUse 10
-Fail 0.00
-EndAttack
-
-Attack
-Name Tonnerre
-Type Electric
+Name Bourdon
+Type Insect
 Power 90
+NbUse 10
+Fail 0.10
+EndAttack
+
+Attack
+Name Plaie-Croix
+Type Insect
+Power 80
 NbUse 15
 Fail 0.00
 EndAttack
 
 Attack
-Name Bulles d'O
-Type Water
+Name Etincelle
+Type Electric
 Power 65
 NbUse 20
 Fail 0.00
 EndAttack
 
 Attack
-Name Vive-Attaque
-Type Normal
-Power 40
-NbUse 30
-Fail 0.00
-EndAttack
-
-Attack
-Name Deflagration
-Type Fire
+Name Fatal-Foudre
+Type Electric
 Power 110
 NbUse 5
-Fail 0.15
+Fail 0.30
 EndAttack
 
 Attack
-Name Danse Fleur
-Type Nature
-Power 120
-NbUse 10
+Name Poing de Feu
+Type Fire
+Power 75
+NbUse 15
 Fail 0.00
 EndAttack
 
 Attack
-Name Charge
+Name Flammèche
+Type Fire
+Power 40
+NbUse 25
+Fail 0.00
+EndAttack
+
+Attack
+Name Surf
+Type Water
+Power 90
+NbUse 15
+Fail 0.00
+EndAttack
+
+Attack
+Name Pistolet à eau
+Type Water
+Power 40
+NbUse 25
+Fail 0.00
+EndAttack
+
+Attack
+Name Canon
+Graine
+Type Nature
+Power 80
+NbUse 15
+Fail 0.00
+EndAttack
+
+Attack
+Name Fouet Lianes
+Type Nature
+Power 45
+NbUse 25
+Fail 0.00
+EndAttack
+
+Attack
+Name Tir de Boue
+Type Soil
+Power 55
+NbUse 20
+Fail 0.00
+EndAttack
+
+Attack
+Name Lame de Roc
+Type Soil
+Power 100
+NbUse 5
+Fail 0.20
+EndAttack
+
+Attack
+Name Ultralaser
+Type Normal
+Power 150
+NbUse 5
+Fail 0.10
+EndAttack
+
+Attack
+Name Plaquage
+Type Normal
+Power 85
+NbUse 15
+Fail 0.00
+EndAttack
+
+Attack
+Name Griffe
 Type Normal
 Power 40
 NbUse 35
+Fail 0.00
+EndAttack
+
+Attack
+Name Ecrasement
+Type Normal
+Power 65
+NbUse 20
 Fail 0.00
 EndAttack

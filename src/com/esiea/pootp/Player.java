@@ -3,8 +3,10 @@ package com.esiea.pootp;
 import com.esiea.pootp.monsters.Monster;
 import com.esiea.pootp.objects.Consumable;
 import com.esiea.pootp.gui.BattleFrame;
+import com.esiea.pootp.attacks.Attack;
 
 import java.util.List;
+import java.util.Random;
 import java.util.stream.Collectors;
 
 public class Player {
@@ -13,7 +15,8 @@ public class Player {
     private Monster activeMonster;
     private final List<Consumable> inventory;
 
-
+    private boolean isBot = false;
+    private final Random random = new Random();
     private Action selectedAction;
     private final Object lock = new Object();
     private BattleFrame gui;
@@ -31,13 +34,19 @@ public class Player {
         }
     }
 
+    public void setIsBot(boolean isBot) {
+        this.isBot = isBot;
+    }
+
+    public boolean isBot() {
+        return isBot;
+    }
 
     public void setGui(BattleFrame gui) {
         this.gui = gui;
     }
 
     public Action chooseAction(Monster opponent) {
-
         if (this.activeMonster == null || this.activeMonster.getHp() <= 0) {
             Monster nextMonster = team.stream()
                     .filter(m -> m.getHp() > 0 && m != this.activeMonster)
@@ -45,14 +54,38 @@ public class Player {
             return (nextMonster != null) ? new Action(nextMonster) : new Action();
         }
 
+        if (this.isBot) {
+            return chooseBotAction();
+        } else {
+            return chooseHumanAction(opponent);
+        }
+    }
 
+
+    private Action chooseBotAction() {
+        try { Thread.sleep(1000); } catch (InterruptedException e) { Thread.currentThread().interrupt(); }
+
+        List<Attack> availableAttacks = activeMonster.getAttacks().stream()
+                .filter(a -> a.getNbUse() > 0)
+                .collect(Collectors.toList());
+
+        if (!availableAttacks.isEmpty()) {
+            Attack chosen = availableAttacks.get(random.nextInt(availableAttacks.size()));
+            return new Action(chosen);
+        }
+
+        Monster backup = team.stream().filter(m -> m.getHp() > 0 && m != activeMonster).findFirst().orElse(null);
+        if (backup != null) return new Action(backup);
+
+        return new Action();
+    }
+
+    private Action chooseHumanAction(Monster opponent) {
         selectedAction = null;
-
 
         if (gui != null) {
             gui.showMainMenu(this, opponent);
         }
-
 
         synchronized (lock) {
             while (selectedAction == null) {
@@ -73,8 +106,6 @@ public class Player {
             lock.notifyAll();
         }
     }
-
-
 
     public void switchMonster(Monster newMonster) {
         if (newMonster != null && newMonster.getHp() > 0 && this.team.contains(newMonster)) {

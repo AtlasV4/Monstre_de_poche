@@ -1,106 +1,129 @@
 Monster
-Name Dracaufeu
-Type Fire
-HP 180 220
-Defense 60 95
-Attack 90 130
-Speed 100 120
-Burn 0.50
-Image https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png
-EndMonster
-
-Monster
-Name Tortank
-Type Water
-HP 210 250
-Attack 85 110
-Defense 110 140
-Speed 70 95
-Flood 0.15
-Fall 0.10
-Image https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png
-EndMonster
-
-Monster
-Name Florizarre
-Type Nature
-HP 200 240
-Speed 60 80
-Attack 70 100
-Defense 90 120
-Image https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png
-EndMonster
-
-Monster
-Name Electhor
-Type Electric
-Defense 100 130
-HP 170 210
-Speed 120 150
-Attack 90 120
-Paralysis 0.35
-Image https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/145.png
-EndMonster
-
-Monster
-Name Grolem
+Name Roc-Titan
 Type Soil
-HP 230 280
+HP 210 250
 Attack 110 140
-Defense 120 150
-Speed 40 60
-Image https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/76.png
+Defense 130 160
+Speed 40 65
+Image assets/roctitan.png
 EndMonster
 
 Monster
-Name Leviator
+Name Aquaslyth
 Type Water
-HP 250 300
-Attack 90 120
-Defense 75 105
-Speed 85 110
-Flood 0.25
-Fall 0.15
-Image https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/130.png
+HP 170 200
+Attack 95 125
+Defense 85 110
+Speed 105 135
+Image assets/aquaslyth.png
 EndMonster
 
 Monster
-Name Arcanin
+Name Pyrowing
 Type Fire
-HP 190 225
-Attack 100 135
-Defense 80 100
-Speed 95 120
-Burn 0.30
-Image https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/59.png
+HP 160 190
+Attack 120 150
+Defense 70 95
+Speed 115 145
+Image assets/pyrowing.png
 EndMonster
 
 Monster
-Name Alakazam
+Name Florasage
+Type Plant
+HP 185 220
+Attack 105 130
+Defense 90 120
+Speed 80 105
+Image assets/florasage.png
+EndMonster
+
+Monster
+Name Toxivore
+Type Insect
+HP 200 240
+Attack 100 125
+Defense 110 140
+Speed 55 80
+Image assets/toxivore.png
+EndMonster
+
+Monster
+Name Octoghost
 Type Normal
 HP 150 180
-Attack 120 160
-Defense 45 70
-Speed 130 160
-Image https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/65.png
+Attack 115 145
+Defense 60 85
+Speed 120 150
+Image assets/octoghost.png
 EndMonster
 
 Monster
-Name Mackogneur
-Type Normal
-HP 220 260
-Attack 110 140
-Defense 80 110
-Speed 55 75
-Image https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/68.png
-EndMonster
-
-Monster
-Name Sablaireau
+Name Iron-Horn
 Type Soil
+HP 220 260
+Attack 115 145
+Defense 140 180
+Speed 45 70
+Image assets/ironhorn.png
+EndMonster
+
+Monster
+Name Celestia
+Type Plant
+HP 140 175
+Attack 90 120
+Defense 75 100
+Speed 130 160
+Image assets/celestia.png
+EndMonster
+
+Monster
+Name Voltra-Rex
+Type Electric
+HP 195 235
+Attack 130 165
+Defense 95 125
+Speed 90 115
+Image assets/voltrarex.png
+EndMonster
+
+Monster
+Name Velout
+Type Nature
+HP 175 210
+Attack 125 155
+Defense 80 110
+Speed 110 140
+Image assets/velout.png
+EndMonster
+
+Monster
+Name Jonbrin
+Type Water
+HP 230 270
+Attack 85 110
+Defense 120 150
+Speed 30 55
+Image assets/jonbrin.png
+EndMonster
+
+Monster
+Name Ereizem
+Type Electric
+HP 200 240
+Attack 140 175
+Defense 110 140
+Speed 85 115
+Image assets/ereizem.png
+EndMonster
+
+Monster
+Name Bubbloid
+Type Normal
 HP 190 230
-Attack 85 115
-Defense 100 130
-Speed 65 90
-Image https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/28.png
+Attack 70 100
+Defense 90 120
+Speed 75 100
+Image assets/bubbloid.png
 EndMonster
