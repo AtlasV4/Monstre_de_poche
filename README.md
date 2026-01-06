@@ -29,8 +29,10 @@ Monstre_de_poche/
 |       ├── action      # Action effectués par le joueur (Attaque, Objets, Changements)
 |       ├── controller 
 |       ├── main        # Classe principale, lancement du jeu
-|       ├── player      # Représentation d'un joueur, team de monstres, etc
-|        
+|       └── player      # Représentation d'un joueur, team de monstres, etc
+├── assets/             # Ressources graphiques (Sprites des monstres)
+├── monsters.txt        # Base de données des créatures
+├── attacks.txt         # Base de données des capacités    
 └── README.md
 
 ```
@@ -66,13 +68,13 @@ Vous pouvez ajouter vos propres monstres dans `monsters.txt` en suivant ce forma
 
 ```text
 Monster
-Name Dracaufeu
+Name MonMonstre
 Type Fire
 HP 180 220
 Attack 90 130
 Defense 60 95
 Speed 100 120
-Image https://URL_DE_VOTRE_IMAGE.png
+Image https://URL_DE_VOTRE_IMAGE.png ou chemin de l'image assets/VOTRE_IMAGE.png
 EndMonster
 
 ```
@@ -100,5 +102,14 @@ EndAttack
 ## 🎨 Aperçu de l'Interface
 
 * **Centre** : Arène de combat avec décors et sprites.
-* **Droite** : Journal de bord textuel.
 * **Bas** : Menu d'actions (Attaques colorées par type, Sac d'objets, Changement de monstre).
+
+## 🎮 Commandes de Jeu
+
+**Attaque** : Choisissez parmi les 4 capacités de votre monstre actif.
+
+**Sac** : Utilisez des objets de soin pour reprendre l'avantage.
+
+**Monstres** : Changez de monstre tactiquement pour exploiter les types adverses.
+
+**Retour** : Naviguez facilement entre les menus de combat.
