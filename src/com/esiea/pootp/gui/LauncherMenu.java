@@ -45,7 +45,7 @@ public class LauncherMenu extends JFrame {
         setSize(850, 750);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        BackgroundPanel mainPanel = new BackgroundPanel("mdp.jpg");
+        BackgroundPanel mainPanel = new BackgroundPanel("assets/mdp.jpg");
         mainPanel.setLayout(new BorderLayout(10, 10));
         setContentPane(mainPanel);
 
